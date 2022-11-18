@@ -1,3 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;800&display=swap");
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.notifications-page__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.notifications-page__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.notifications-page__top--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.notifications-page__top h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.notifications-page__number {
+  width: 3.5rem;
+  height: 3rem;
+  background-color: var(--blue);
+  border-radius: 20%;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.notifications-page__read {
+  color: var(--grayish-blue);
+}
+
+.notifications-page__read:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.notifications-page__person {
+  border-radius: 1rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.notifications-page__person:nth-child(2), .notifications-page__person:nth-child(3), .notifications-page__person:nth-child(4) {
+  background-color: var(--very-light-grayish-blue);
+}
+
+.notifications-page__person--block--font, .notifications-page__person--block__time {
+  font-size: 1.4rem;
+  color: var(--grayish-blue);
+}
+
+.notifications-page__person--block b {
+  color: var(--very-dark-blue);
+  font-size: 1.5rem;
+}
+
+.notifications-page__person--block b:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.notifications-page__person--block span {
+  color: var(--very-dark-blue);
+}
+
+.notifications-page__person--block__time {
+  font-size: 1.3rem;
+  color: var(--grayish-blue);
+}
+
+.notifications-page__person img {
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.notifications-page__dot {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
