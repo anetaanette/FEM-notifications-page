@@ -20,6 +20,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.notifications-page {
+  /* &__dot {
+  } */
+}
+
 .notifications-page__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,7 +125,14 @@
   border-radius: 50%;
 }
 
-.notifications-page__dot {
+.notifications-page__person--font-link {
+  text-decoration: none;
+}
+
+.notifications-page__person--font::after {
+  content: "";
+  position: absolute;
+  display: inline;
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
