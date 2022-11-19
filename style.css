@@ -20,11 +20,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.notifications-page {
-  /* &__dot {
-  } */
-}
-
 .notifications-page__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,14 +124,23 @@
   text-decoration: none;
 }
 
-.notifications-page__person--font::after {
-  content: "";
-  position: absolute;
-  display: inline;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  background-color: var(--red);
+.notifications-page__person--font .fa-circle {
+  color: var(--red);
+  font-size: 8px;
+  vertical-align: middle;
+}
+
+.notifications-page__message {
+  margin: 5% 0%;
+  border: 1px solid var(--light-grayish-blue-1);
+  padding: 4%;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.notifications-page__message:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-blue-1);
 }
 
 .attribution {
@@ -146,5 +150,16 @@
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: var(--very-light-grayish-blue);
+  }
+  body .notifications-page__container {
+    max-width: 55rem;
+    background-color: var(--white);
+    border-radius: 10%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

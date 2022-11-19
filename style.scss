@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;800&display=swap");
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
 :root {
   --red: hsl(1, 90%, 64%);
   --blue: hsl(219, 85%, 26%);
@@ -115,20 +124,26 @@
         text-decoration: none;
       }
 
-      &::after {
-        content: "";
-        position: absolute;
-        display: inline;
-        height: 1rem;
-        width: 1rem;
-        border-radius: 50%;
-        background-color: var(--red);
+      .fa-circle {
+        color: var(--red);
+        font-size: 8px;
+        vertical-align: middle;
       }
     }
   }
 
-  /* &__dot {
-  } */
+  &__message {
+    margin: 5% 0%;
+    border: 1px solid var(--light-grayish-blue-1);
+    padding: 4%;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--light-grayish-blue-1);
+    }
+  }
 }
 
 .attribution {
@@ -137,5 +152,17 @@
 
   a {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: var(--very-light-grayish-blue);
+
+    .notifications-page__container {
+      max-width: 55rem;
+      background-color: var(--white);
+      border-radius: 10%;
+    }
   }
 }
