@@ -105,7 +105,8 @@ $grid-breakpoints: (
       }
 
       span {
-        color: var(--very-dark-blue);
+        color: var(--dark-grayish-blue);
+        font-weight: bold;
       }
 
       &__time {
@@ -120,6 +121,7 @@ $grid-breakpoints: (
     }
 
     &--font {
+      color: var(--dark-grayish-blue);
       &-link {
         text-decoration: none;
       }

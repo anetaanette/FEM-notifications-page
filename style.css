@@ -107,7 +107,8 @@
 }
 
 .notifications-page__person--block span {
-  color: var(--very-dark-blue);
+  color: var(--dark-grayish-blue);
+  font-weight: bold;
 }
 
 .notifications-page__person--block__time {
@@ -118,6 +119,10 @@
 .notifications-page__person img {
   height: 4rem;
   border-radius: 50%;
+}
+
+.notifications-page__person--font {
+  color: var(--dark-grayish-blue);
 }
 
 .notifications-page__person--font-link {
